@@ -10,8 +10,6 @@
     "profiles": [
       { "network": "github", "username": "kaigarcia", "url": "http://github.com/kaigarcia" },
       { "network": "linkedin", "url": "http://linkedin.com/in/kai-garcia" },
-      // { "network": "twitter", "username": "mollymal", "url": "http://twitter.com/changeme" },
-      // { "network": "instagram", "username": "molly", "url": "http://instagram.com/changeme" }
     ]
   },
   "interests": [
