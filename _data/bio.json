@@ -1,31 +1,30 @@
 {
   "basics": {
-    "name": "Molly Maluhia",
-    "label": "Student",
-    "picture": "https://github.com/kambergjohnson.png",
-    "email": "molly@hawaii.edu",
-    "phone": "808-333-4444",
-    "website": "https://mmaluhia.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2024.",
-    "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "name": "Kai Garcia",
+    "label": "Software Engineer | Student",
+    "picture": "https://github.com/kaigarcia.png",
+    "business email": "contact@kaigarcia.dev",
+    "school email": "kaigar21@hawaii.edu",
+    "website": "https://kaigarcia.dev",
+    "summary": "I am studying Computer Science at the University of Hawaii at Manoa. At work I create and manage software for a publishing company, mainly using the LAMP development stack.",
     "profiles": [
-      { "network": "github", "username": "mmaluhia", "url": "http://github.com/changeme" },
-      { "network": "linkedin", "username": "mollymaluhia", "url": "http://linkedin.com/in/changeme" },
-      { "network": "twitter", "username": "mollymal", "url": "http://twitter.com/changeme" },
-      { "network": "instagram", "username": "molly", "url": "http://instagram.com/changeme" }
+      { "network": "github", "username": "kaigarcia", "url": "http://github.com/kaigarcia" },
+      { "network": "linkedin", "url": "http://linkedin.com/in/kai-garcia" },
+      // { "network": "twitter", "username": "mollymal", "url": "http://twitter.com/changeme" },
+      // { "network": "instagram", "username": "molly", "url": "http://instagram.com/changeme" }
     ]
   },
   "interests": [
-    { "name": "Interactive media" },
-    { "name": "Neuromorphic Computing" },
-    { "name": "Quantum Computing" },
-    { "name": "Robotics" },
-    { "name": "3D Graphics" }
+    { "name": "Software Engineering" },
+    { "name": "Computer Vision" },
+    { "name": "Self-Driving" },
+    { "name": "Entrepreneurship" },
+    { "name": "Martial Arts" }
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript", "Assembly", "Common Lisp" ]
+      "keywords": [ "PHP", "Python", "HTML/CSS", "Javascript", "SQL"]
     },
     {
       "name": "Toolsets/OS",
@@ -35,39 +34,27 @@
   "education": [
     {
       "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2018)",
+      "area": "Computer Science",
       "studyType": "B.S.",
-      "startDate": "2013-09-01",
-      "endDate": "Present",
-      "courses": [
+      "startDate": "Aug. 2021",
+      "endDate": " (expected Spring, 2025)",
+      "courses": ["Java", "C/C++", "SQL", "Software Engineering", "Algorithms/Data Structures"
       ]
     }
   ],
   "work": [
     {
-      "company": "UH Manoa Board of Publications",
-      "position": "Web Developer",
-      "website": "",
-      "startDate": "2015-08-01",
-      "endDate": "Present",
-      "summary": "Head of online presence for Ka Leo",
+      "company": "ISEC Society",
+      "position": "Full Stack Web Developer",
+      "website": "isec-society.org",
+      "startDate": "2022-12-01",
+      "endDate": "Currently working here",
+      "summary": "Lead Developer",
       "highlights": [
         "Maintain, update, and oversee official college newspaper website",
         "Drive, design and build student-community projects for UH Manoa"
       ]
     },
-    {
-      "company": "UH Information Technology Services",
-      "position": "Help Desk Consultant",
-      "website": "http://www.hawaii.edu/its/",
-      "startDate": "2015-01-01",
-      "endDate": "2016-03-15",
-      "summary": "",
-      "highlights": [
-        "Troubleshoot software, hardware and networking issues over the phone",
-        "Answer phone and email responses to the ITS Help Desk"
-      ]
-    }
   ],
   "volunteer": [
     {
