@@ -3,8 +3,7 @@
     "name": "Kai Garcia",
     "label": "Software Engineer | Student",
     "picture": "https://github.com/kaigarcia.png",
-    "business email": "contact@kaigarcia.dev",
-    "school email": "kaigar21@hawaii.edu",
+    "email": "contact@kaigarcia.dev",
     "website": "https://kaigarcia.dev",
     "summary": "I am studying Computer Science at the University of Hawaii at Manoa. At work I create and manage software for a publishing company, mainly using the LAMP development stack.",
     "profiles": [
@@ -26,7 +25,7 @@
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub", "g++", "TI LaunchPad" ]
+      "keywords": [ "Linux", "Apache", "Git/GitHub", "MySQL", "cPanel" ]
     }
   ],
   "education": [
@@ -35,8 +34,8 @@
       "area": "Computer Science",
       "studyType": "B.S.",
       "startDate": "Aug. 2021",
-      "endDate": " (expected Spring, 2025)",
-      "courses": ["Java", "C/C++", "SQL", "Software Engineering", "Algorithms/Data Structures"
+      "endDate": "Present",
+      "courses": ["Java", "C/C++", "SQL", "Software Engineering(Javascript)", "Algorithms/Data Structures"
       ]
     }
   ],
@@ -45,54 +44,43 @@
       "company": "ISEC Society",
       "position": "Full Stack Web Developer",
       "website": "isec-society.org",
-      "startDate": "2022-12-01",
-      "endDate": "Currently working here",
+      "startDate": "Dec. 2022",
+      "endDate": "Present",
       "summary": "Lead Developer",
       "highlights": [
-        "Maintain, update, and oversee official college newspaper website",
-        "Drive, design and build student-community projects for UH Manoa"
+        "Refactored obsolete and undocumented LAMP (Linux, Apache, MySQL, PHP) projects to modernize payment tracking features; assisting in generating over $100,000 in revenue.",
+        "Overhauled engineering team workflow; implemented local test environment for existing products, improved version control (team was using single main branch), transitioned from document to Kanban-style task tracking.",
+        "Worked closely with nontechnical management to solidify unclear feature requests; proposed designs, turned requests into actionable tasks, negotiated due dates, and effectively delivered on time.",
+        "Conducted interviews and training for incoming developers, assessed technical skills and cultural fit, and introduced backlog grooming and pair programming practices to build and lead a strong and capable software engineering team."
       ]
     },
   ],
   "volunteer": [
     {
-      "organization": "Center for Renewable Energy and Island Sustainability",
-      "website": "http://manoa.hawaii.edu/reis",
-      "position": "Software Developer",
-      "startDate": "2016-01-01",
+      "organization": "Pacific Asian Center for Entrepreneurship",
+      "website": "https://pace.shidler.hawaii.edu/",
+      "position": "PACE Leader",
+      "startDate": "Aug. 2023",
       "endDate": "Present",
-      "summary": "Lead developer for weather sensing project",
+      "summary": "Associate of Makers Program",
       "highlights": [
-        "Design firmware for distributed weather sensor network",
-        "Maintain custom data collection and storage infrastructure"
+        "Run workshops to teach entrepreneurs how to build prototypes for their ventures.",
+        "Manage inventory and budget for supplies and program costs."
       ]
     },
     {
-      "organization": "",
-      "website": "",
-      "position": "Professional organization involvement",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
+      "organization": "Discover AI",
+      "website": "https://www.discover.ai/",
+      "position": "",
+      "startDate": "Sep. 2022",
+      "endDate": "Nov. 2022",
+      "summary": "Introductory AI Course",
       "highlights": [
-        "Chair, ACM Manoa, 2016-Present",
-        "Member, IEEE Student Branch, 2014-Present",
-        "Webmaster/IT Officer, IEEE Student Branch, UH Manoa, 2012-2013"
+        "10-week course in foundational AI concepts, machine learning, and ethics.",
+        "Collaborated to develop and train machine learning models using Python.",
+        "Explored real-world applications of AI, such as computer vision, natural language
+processing, and robotics."
       ]
-    }
-  ],
-  "awards": [
-    {
-      "title": "B+ Scholarship",
-      "date": "2013-Present",
-      "awarder": "State of Hawaii",
-      "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
-    },
-    {
-      "title": "First place",
-      "date": "2015",
-      "awarder": "University of Hawaii Micromouse Competition",
-      "summary": "My team won first place in 2015.  See my portfolio site for more details."
     }
   ],
   "references": [
