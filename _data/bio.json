@@ -2,9 +2,9 @@
   "basics": {
     "name": "Kai Garcia",
     "label": "Software Engineer | Student",
-    "picture": "https://github.com/kaigarcia.png",
+    "picture": "img/IMG_5159 copy.jpg",
     "email": "contact@kaigarcia.dev",
-    "website": "img/IMG_5159 copy.jpg",
+    "website": "kaigarcia.dev",
     "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
     "summary": "I am studying Computer Science at the University of Hawaii at Manoa. At work I create and manage software for a publishing company, mainly using the LAMP development stack.",
     "profiles": [
