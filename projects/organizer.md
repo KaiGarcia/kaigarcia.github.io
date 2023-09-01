@@ -11,7 +11,10 @@ labels:
 summary: "A simple Python script to organize my files."
 ---
 
-This Python script allows you to declutter the files in your directories. The script will sort all the files into folders labeled with the file types.
+After a few months of using the same Macbook for work and school, I have found myself with a crowded and disorganized downloads folder. I wanted to be able to find pdf or image files quickly without having to manually sort and scrape my large downloads folder. My struggle motivated me to write a quick script to solve my problems.
+
+This Python script allows you to declutter the files in your directories. The script will sort all the files into folders labeled with the file types. 
+
 Here is the source code of the script:
 
 <hr>
