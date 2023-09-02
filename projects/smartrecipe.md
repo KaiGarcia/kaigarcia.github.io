@@ -52,6 +52,5 @@ for idx, row in recommended_recipes.iterrows():
 
 ```
  
-TfidfVectorizer Documentation: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html"</a>
-linear_kernel Documentation: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.linear_kernel.html"</a>
-
+[TfidfVectorizer Documentation]([url](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html))
+[linear_kernel Documentation]([url](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.linear_kernel.html))
