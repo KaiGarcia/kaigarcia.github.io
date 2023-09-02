@@ -1,19 +1,19 @@
 ---
 layout: essay
 type: essay
-title: "Igniting the fire"
+title: "My Future in Tech"
 # All dates must be YYYY-MM-DD format!
-date: 2015-08-26
-published: false
+date: 2023-09-01
+published: true
 labels:
   - Software Engineering
   - Learning
 ---
 
-<img width="100px" class="rounded float-start pe-4" src="../img/igniting/paintbrushes.jpg">
+<img width="100px" class="rounded float-start pe-4" src="../img/c++meme.png">
 
-Ever since I first grasped a paintbrush, I’ve always been eager to learn about design. Design is such a complex concept. For example, when looking at abstract art, its meaning can be completely different for different people. It motivates a person to think thoughtfully and has the potential to submerge them in a sea of imagination. It’s that special relationship between the viewer and the art that makes something as technical as software engineering interesting to me.
+  My profound interest in computer science spans across three exciting domains: web applications, computer vision, and self-driving technologies. In the realm of web applications, I am eager to master the art of building robust and user-friendly web platforms that solve real-world problems. I aim to develop proficiency in frontend technologies like HTML, CSS, and JavaScript to create seamless user interfaces, as well as delve into backend development to ensure efficient data handling and server-side logic. My goal is to craft web applications that provide valuable and engaging experiences for users while honing my skills in full-stack development.
 
-I never used to think that design and technology went hand in hand.  Thus, learning about software engineering and the role of design has been incredibly interesting to me. Design, implementation, and management are just some of the many things I wish to learn more about. Good art, in a way, makes a person question it. They become joined in the idea of visualization – where captivation meets inspiration.
+  Computer vision is another captivating field that captivates my curiosity. The prospect of teaching machines to perceive and understand visual data opens doors to a myriad of applications, from image recognition and object tracking to medical image analysis. I am keen to dive into the world of deep learning and neural networks, mastering frameworks like TensorFlow and PyTorch. By acquiring expertise in computer vision, I hope to contribute to the development of innovative solutions that enhance automation, security, and user interaction in various domains.
 
-I am now starting to take a Software Engineering class. I hope to learn a lot through the course, but I know it will be just the beginning of my journey. By the time I’m done with it, I hope I’ve learned enough to take the next step in my life as a developer. But until then, my fire will keep on burning.
+  Lastly, the realm of self-driving technology intrigues me deeply. The fusion of AI, robotics, and real-time data processing to create autonomous vehicles is nothing short of remarkable. I aspire to delve into this field, exploring topics like sensor fusion, path planning, and real-time decision-making algorithms. My aim is to cultivate the skills necessary to contribute to the advancement of self-driving technology, with a vision of making transportation safer, more efficient, and environmentally friendly. Overall, my journey in computer science is driven by a passionate desire to learn, innovate, and make a positive impact on society through these dynamic and transformative areas of technology.
