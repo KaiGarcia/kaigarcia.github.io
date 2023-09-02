@@ -19,7 +19,7 @@ Here is the source code of the script:
 
 <hr>
 
-<pre>
+```python
 import os
 import shutil
 
@@ -45,7 +45,6 @@ for file in files:
     path_of_file_moved = os.path.join(path,file)
     shutil.move(path_of_file_moved,os.path.join(path_is_checked_exist,file))
 
-
-</pre>
+```
 
 <hr>
