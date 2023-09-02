@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/unify_ivy_logo.jpg
+image: img/unify_ivy_logo.png
 title: "Unify AI/Ivy Open Source"
 date: 2023
 published: true
