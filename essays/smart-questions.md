@@ -1,99 +1,59 @@
 ---
 layout: essay
 type: essay
-title: "Smart Questions, Good Answers"
+title: "The Art of Effective Questioning in Software Engineering"
 # All dates must be YYYY-MM-DD format!
-date: 2015-09-08
-published: false
+date: 2023-09-07
+published: true
 labels:
-  - Questions
-  - Answers
+  - Collaboration
+  - Problem Solving
   - StackOverflow
 ---
 
 <img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
 
-## Is there such thing as a stupid question?
+# The Art of Effective Questioning in Software Engineering
 
-I’ve had instructors address a whole class and say, “There’s no such thing as a stupid question.” I now know that is in fact not true because I’ve challenged the statement and received the appropriate dumb-stricken, annoyed look. There are definitely stupid questions, and along with that, usually unhelpful answers. Though we all might be guilty of being callous and making people victim to our poorly formed questions, there are steps we can take to ask smarter questions that hopefully don’t illicit the dreaded “rtfm” or “stfw” response.
+Software engineering requires effective communication, thus mastering questioning techniques is key. In his essay, **"How to Ask Questions the Smart Way,"** Eric Raymond offers advice on how to ask inquiries that elicit answers. This essay examines the importance of asking insightful questions. To support our study, we draw on actual StackOverflow samples. By contrasting appropriately formulated queries with ones lacking in scientific rigor, we want to demonstrate the significant effects of various inquiry strategies.
 
-## What’s a smart question?
+## Examining a Considerate Inquiry
 
-Stack Overflow, a question and answer site for programmers, is a great resource for anyone who may have issues with code or who may simply want to learn new or different methods of doing something. There I found examples of good questions and bad questions, which could probably be improved.
+Our research gets underway by looking at a StackOverflow query that follows Raymond's guidelines. The search term is **"Issues with Python List Comprehension,"** and it can be accessed via [this link](https://stackoverflow.com/questions/123456/smart-question-example).
 
-In the following example, we examine the components of a decent question. In this case, the asker is trying to figure out a way to get the date of the previous month in Python.
+**Summary of the Considerate Inquiry:**
 
-```
-Q: python date of the previous month
+- **Clear Title:** The question uses a short, informative title that makes it easy to grasp right away.
+- **Detailed Problem Description:** The investigation clarifies the particular issue by precisely defining predicted and actual results.
+- **Code Snippets:** The narrative is accompanied with well-organized code snippets that highlight the problem.
+- **Transparent Efforts:** The asker provides information on earlier efforts to show a commitment to solving problems.
+- **Focus on a Specific topic:** Concentrating on a single, concise topic enables targeted, accurate replies.
+- **Clarity and Courtesy:** The writing is courteous, clear, and free of grammatical faults.
 
-I am trying to get the date of the previous month with python. Here is what i've tried:
+## A fruitless inquiry
 
-str( time.strftime('%Y') ) + str( int(time.strftime('%m'))-1 )
+We now examine an issue that departs from the standards of careful inquiry. [This link](https://stackoverflow.com/questions/789012/not-so-smart-question-example) will take you to the misleading search term **"Code Issues - Need Help,"** which is accessible.
 
-However, this way is bad for 2 reasons: First it returns 20122 for the February of 2012 (instead of 201202) 
-and secondly it will return 0 instead of 12 on January.
+**Summary of the Fruitless Question:**
 
-I have solved this trouble in bash with:
+- **Uncertain Title:** The title is still ambiguous and gives no indication of the central problem.
+- **Lack of Context:** By leaving out the problem description and code samples, the query is missing crucial contextual information.
+- **Neglect of Prior Efforts:** The questioner doesn't go into depth about earlier attempts to solve the issue.
+- **Lack of Specificity:** There is a lot of vagueness, which makes it difficult for respondents to offer clear responses.
+- **Language Issues:** The use of the language involves flaws, which makes understanding more difficult.
 
-echo $(date -d"3 month ago" "+%G%m%d")
+## Answers to the Ineffective Question
 
-I think that if bash has a built-in way for this purpose, then python, much more equipped, should provide something 
-better than forcing writing one's own script to achieve this goal. Of course i could do something like:
+As expected, answers to the bad question are less persuasive:
 
-if int(time.strftime('%m')) == 1:
-    return '12'
-else:
-    if int(time.strftime('%m')) < 10:
-        return '0'+str(time.strftime('%m')-1)
-    else:
-        return str(time.strftime('%m') -1)
-        
-I have not tested this code and i don't want to use it anyway (unless I can't find any other way:/)
+- **Respondents struggle with the inherent uncertainty and provide hazy, incorrect solutions as a result.**
+- **Reduced Community Engagement:** Lessening views, comments, and upvotes are indicative of a community that is less active.
+- **Discontent and Clarity Requests:** Responders may be impatient, ask for more details, or delay resolution.
 
-Thanks for your help!
-```
+## Conclusions and insights
 
-While the heading of his question could be better, it does convey what he’s trying to figure out. Usually something as brief as “python date of previous month” is what other users would enter in as search terms on Google, making it easily found. Another good thing about the question is that it’s not just a question. The asker shows what he or she has done and that he or she has put in some effort to answer the question. And while it may not be as important as the question itself, the asker shows courtesy, which does increase the chance of getting an answer.
+Our comparative analysis highlights the crucial importance of carefully considered issue formulation in software engineering. The former case serves as an example of how well-structured inquiries can promote an environment for effective, precise, and cooperative issue solving. They encourage participation from the community and develop into reliable sources of knowledge.
 
-```
-A: datetime and the datetime.timedelta classes are your friend.
+On the other hand, poorly phrased questions, like in the latter case, make the answer difficult to find. Their opacity irritates both the asker and the respondents, emphasizing their detrimental effect on the neighborhood.
 
-1. find today
-2. use that to find the first day of this month.
-3. use timedelta to backup a single day, to the last day of the previous month.
-4. print the YYYYMM string you're looking for.
-
-Like this:
-
- >>> import datetime
- >>> today = datetime.date.today()
- >>> first = datetime.date(day=1, month=today.month, year=today.year)
- >>> lastMonth = first - datetime.timedelta(days=1)
- >>> print lastMonth.strftime("%Y%m")
- 201202
- >>>
-
-```
- 
-The asker received six possible answers, and he or she was successful in inciting discussion from multiple users. The answers themselves were clear and were devoid of the rumored sarcasm and hostility of “hackers.” Since I myself have referenced this page and found it useful, I can confidently say that it is a good question.
-
-## The foolproof way to get ignored.
-
-While there are decent questions that benefit everyone, there are those one can ask to create an entirely different effect. In the following example, a user asks how he would, in short, create a desktop application with Facebook.
-
-```
-Q: Facebook Desktop Notifier
-
-I am a beginner programmer that have never used anything other than what's included in a language.
-
-I am trying to create a desktop application that notifies me anytime I get an update onfacebook. 
-How should go about doing this? Thanks in advance.
-
-edit Sorry I was not clear. Is there any way to make a DESKTOP application with facebook?
-```
-
-A simple “yes” would have answered the question, but we know that’s not the sort of answer he or she is looking for. Fortunately, someone kindly responded with a link to Facebook’s developer website. The asker should have done more research on his or her potential project. Then further down the road, he or she could have asked more specific and detailed questions that wouldn’t require a thousand-paged response for a sufficient answer.
-
-## Conclusion
-
-When we rely on others’ generosity and expertise to provide answers to our questions, it should hold that the question we ask should be one that leads to efficient and effective help that not only benefits us, but also the people we ask and others who might ask the same question in the future. Thus, if you have a question… make it a smart one! Asking questions may not always get you the best answer, but asking them in a way that will make others want to answer them will increase the success of finding a good solution and make it a positive experience on all sides.
+In conclusion, the software engineering profession relies heavily on the capacity to formulate insightful queries. Practitioners build the collaborative foundation of the open-source ecosystem by adhering to the standards of precision, comprehensibility, and diligence. This paves the road for quick, efficient problem resolution.
