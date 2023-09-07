@@ -11,9 +11,8 @@ labels:
   - StackOverflow
 ---
 
-<img width="300px" class="rounded float-start pe-4" src="../img/argue_stockimage.png"> <img width="600px" class="rounded float-start pe-4" src="../img/cs_comic.png">
-
 # Effective Questioning Makes Engineering Great
+<img width="300px" class="rounded float-start pe-4" src="../img/argue_stockimage.png"> <img width="600px" class="rounded float-start pe-4" src="../img/cs_comic.png">
 
 Software engineering requires effective communication, thus mastering questioning techniques is key. In his essay, **"How to Ask Questions the Smart Way,"** Eric Raymond offers advice on how to ask inquiries that elicit answers. This essay examines the importance of asking insightful questions. To support our study, we draw on actual StackOverflow samples. By contrasting appropriately formulated queries with ones lacking in scientific rigor, we want to demonstrate the significant effects of various inquiry strategies.
 
