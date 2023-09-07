@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "The Art of Effective Questioning in Software Engineering"
+title: "Ask Good Questions, Get Good Answers!"
 # All dates must be YYYY-MM-DD format!
 date: 2023-09-07
 published: true
@@ -13,7 +13,7 @@ labels:
 
 <img width="300px" class="rounded float-start pe-4" src="../img/argue_stockimage.png"> <img width="600px" class="rounded float-start pe-4" src="../img/cs_comic.png">
 
-# The Art of Effective Questioning in Software Engineering
+# Effective Questioning Makes Engineering Great
 
 Software engineering requires effective communication, thus mastering questioning techniques is key. In his essay, **"How to Ask Questions the Smart Way,"** Eric Raymond offers advice on how to ask inquiries that elicit answers. This essay examines the importance of asking insightful questions. To support our study, we draw on actual StackOverflow samples. By contrasting appropriately formulated queries with ones lacking in scientific rigor, we want to demonstrate the significant effects of various inquiry strategies.
 
