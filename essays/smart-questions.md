@@ -11,8 +11,7 @@ labels:
   - StackOverflow
 ---
 
-<img width="300px" class="rounded float-start pe-4" src="../img/argue_stockimage.png">
-<img width="600px" class="rounded float-start pe-4" src="../img/cs_comic.png">
+<img width="300px" class="rounded float-start pe-4" src="../img/argue_stockimage.png"> <img width="600px" class="rounded float-start pe-4" src="../img/cs_comic.png">
 
 # The Art of Effective Questioning in Software Engineering
 
