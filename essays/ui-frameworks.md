@@ -1,14 +1,14 @@
 ---
 layout: essay
 type: essay
-title: "Ask Good Questions, Get Good Answers!"
+title: "Is Bootstrap 5 Worth It?"
 # All dates must be YYYY-MM-DD format!
-date: 2023-09-07
+date: 2023-10-05
 published: true
 labels:
-  - Collaboration
-  - Problem Solving
-  - StackOverflow
+  - User Interface
+  - Bootstrap 5
+  - Web Development
 ---
 
 <img width="300px" class="rounded float-start pe-4" src="https://cdn.hackr.io/uploads/posts/attachments/1679326591WjFOoim2eQ.png">   
