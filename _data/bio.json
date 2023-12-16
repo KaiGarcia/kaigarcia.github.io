@@ -1,0 +1,91 @@
+{
+  "basics": {
+    "name": "Kai Garcia",
+    "label": "Software Engineer | Student",
+    "picture": "img/IMG_5159 copy.jpg",
+    "email": "contact@kaigarcia.dev",
+    "website": "https://kaigarcia.github.io/",
+    "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "summary": "I am studying Computer Science at the University of Hawaii at Manoa. At work I create and manage software for a publishing company, mainly using the LAMP development stack.",
+    "profiles": [
+      { "network": "github", "username": "kaigarcia", "url": "http://github.com/kaigarcia" },
+      { "network": "linkedin", "url": "http://linkedin.com/in/kai-garcia" }
+    ]
+  },
+  "interests": [
+    { "name": "Software Engineering" },
+    { "name": "Computer Vision" },
+    { "name": "Self-Driving" },
+    { "name": "Entrepreneurship" },
+    { "name": "Martial Arts" }
+  ],
+  "skills": [
+    {
+      "name": "Languages and Frameworks",
+      "keywords": [ "PHP", "ReactJS","Python", "HTML/CSS", "Javascript", "SQL"]
+    },
+    {
+      "name": "Toolsets/OS",
+      "keywords": [ "Git", "Linux", "Apache", "Git/GitHub", "MySQL", "cPanel" ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Hawaii, Honolulu, HI",
+      "area": "Computer Science",
+      "studyType": "B.S.",
+      "startDate": "Aug. 2021",
+      "endDate": "Present",
+      "courses": ["Java", "C/C++", "SQL", "Software Engineering", "Algorithms/Data Structures"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "ISEC Society",
+      "position": "Full Stack Web Developer",
+      "website": "isec-society.org",
+      "startDate": "Dec. 2022",
+      "endDate": "Present",
+      "summary": "Lead Developer",
+      "highlights": [
+        "Upgraded and optimized legacy LAMP stack projects, implementing advanced features in payment tracking and overseeing systems handling $100K+ revenue, resulting in enhanced performance and scalability.",
+        "Streamlined engineering workflow, introduced local testing and Kanban task tracking, and optimized version control, achieving a 3x faster production cycle and error reduction.",
+        "Collaborated with non-tech management to clarify and implement feature requests, ensuring timely delivery and stakeholder satisfaction.",
+        "Recruited and mentored two developers, fostering a collaborative team environment through backlog grooming and pair programming practices."
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Pacific Asian Center for Entrepreneurship",
+      "website": "https://pace.shidler.hawaii.edu/",
+      "position": "PACE Leader",
+      "startDate": "Aug. 2023",
+      "endDate": "Present",
+      "summary": "Associate of Makers Program",
+      "highlights": [
+        "Run workshops to teach entrepreneurs how to build prototypes for their ventures.",
+        "Manage inventory and budget for supplies and program costs."
+      ]
+    },
+    {
+      "organization": "Discover AI",
+      "website": "https://www.discover.ai/",
+      "position": "",
+      "startDate": "Sep. 2022",
+      "endDate": "Nov. 2022",
+      "summary": "Introductory AI Course",
+      "highlights": [
+        "10-week course in foundational AI concepts, machine learning, and ethics.",
+        "Collaborated to develop and train machine learning models using Python.",
+        "Explored real-world applications of AI, such as computer vision, natural language processing, and robotics."
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Available upon request"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Smart Recipe Recommender | Kai Garcia | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="img/IMG_5159 copy.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kai Garcia | Professional Portfolio">
+    <meta property="og:url" content="https://kaigarcia.github.io/projects/smartrecipe.html">
+    <meta property="og:title" content="Smart Recipe Recommender | Kai Garcia | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="img/IMG_5159 copy.jpg">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/rubik.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Smart Recipe Recommender | Kai Garcia | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Kai Garcia</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a> 
+        <a class="nav-link" href="/#essays">Essays</a> 
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Smart Recipe Recommender</h1>
+ <p>This is a sample of a Smart Recipe Recommender system that leverages artificial intelligence and machine learning techniques to provide personalized recipe suggestions to users. Users can create profiles specifying their dietary preferences, ingredient availability, and cooking skill levels. The system then analyzes this information along with a database of recipes, employing TF-IDF vectorization and cosine similarity to recommend recipes that align with the user’s preferences and constraints. It’s a simplified console-based application that demonstrates the core recommendation logic and can serve as a starting point for a more extensive and user-friendly recipe recommendation platform, offering culinary inspiration tailored to individual tastes and cooking abilities.</p>
+
+<p>Here is some example code to illustrate sample dataset use:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics.pairwise</span> <span class="kn">import</span> <span class="n">linear_kernel</span>
+
+<span class="c1"># Sample recipe data (You can replace this with a larger dataset)
+</span><span class="n">recipes</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s">'RecipeID'</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+    <span class="s">'Title'</span><span class="p">:</span> <span class="p">[</span><span class="s">'Spaghetti Carbonara'</span><span class="p">,</span> <span class="s">'Vegetable Stir-Fry'</span><span class="p">,</span> <span class="s">'Chicken Alfredo'</span><span class="p">,</span> <span class="s">'Chocolate Cake'</span><span class="p">],</span>
+    <span class="s">'Ingredients'</span><span class="p">:</span> <span class="p">[</span><span class="s">'spaghetti, eggs, bacon, Parmesan cheese'</span><span class="p">,</span> <span class="s">'broccoli, carrots, tofu, soy sauce'</span><span class="p">,</span> 
+                    <span class="s">'chicken breast, heavy cream, Parmesan cheese'</span><span class="p">,</span> <span class="s">'flour, sugar, cocoa powder, eggs'</span><span class="p">],</span>
+<span class="p">})</span>
+
+<span class="c1"># Sample user preferences
+</span><span class="n">user_preferences</span> <span class="o">=</span> <span class="s">'chicken, cream, Parmesan cheese'</span>
+
+<span class="c1"># Calculate TF-IDF vectors for recipe ingredients
+</span><span class="n">tfidf_vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">()</span>
+<span class="n">tfidf_matrix</span> <span class="o">=</span> <span class="n">tfidf_vectorizer</span><span class="p">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">recipes</span><span class="p">[</span><span class="s">'Ingredients'</span><span class="p">])</span>
+
+<span class="c1"># Calculate cosine similarity between user preferences and recipes
+</span><span class="n">cosine_sim</span> <span class="o">=</span> <span class="n">linear_kernel</span><span class="p">(</span><span class="n">tfidf_matrix</span><span class="p">,</span> <span class="n">tfidf_vectorizer</span><span class="p">.</span><span class="n">transform</span><span class="p">([</span><span class="n">user_preferences</span><span class="p">]))</span>
+
+<span class="c1"># Get top recipe recommendations
+</span><span class="n">recipe_indices</span> <span class="o">=</span> <span class="n">cosine_sim</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">argsort</span><span class="p">()[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">top_recipe_indices</span> <span class="o">=</span> <span class="n">recipe_indices</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>  <span class="c1"># Exclude the first item (itself)
+</span><span class="n">recommended_recipes</span> <span class="o">=</span> <span class="n">recipes</span><span class="p">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">top_recipe_indices</span><span class="p">]</span>
+
+<span class="c1"># Display recommended recipes
+</span><span class="k">print</span><span class="p">(</span><span class="s">"Recommended Recipes:"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">recommended_recipes</span><span class="p">.</span><span class="n">iterrows</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s">'Title'</span><span class="p">]</span><span class="si">}</span><span class="s">: </span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s">'Ingredients'</span><span class="p">]</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<p><a href="[url](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html)">TfidfVectorizer Documentation</a>: https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html</p>
+
+<p><a href="[url](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.linear_kernel.html)">linear_kernel Documentation</a>: https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.linear_kernel.html</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Unify AI/Ivy Open Source | Kai Garcia | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="img/IMG_5159 copy.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kai Garcia | Professional Portfolio">
+    <meta property="og:url" content="https://kaigarcia.github.io/projects/ivyopensource.html">
+    <meta property="og:title" content="Unify AI/Ivy Open Source | Kai Garcia | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="img/IMG_5159 copy.jpg">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/rubik.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Unify AI/Ivy Open Source | Kai Garcia | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Kai Garcia</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a> 
+        <a class="nav-link" href="/#essays">Essays</a> 
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Unify AI/Ivy Open Source</h1>
+ <div class="text-center p-4">
+  <img width="200px" src="../img/unifyai_logo_full.png" class="img-thumbnail" />
+  <img width="200px" src="../img/numpy-logo.png" class="img-thumbnail" />
+  <img width="200px" src="../img/jax_logo.png" class="img-thumbnail" />
+</div>
+
+<p>This contribution adds significant value to the open-source repository by bridging the gap between the popular NumPy library and JAX, a powerful library for numerical computing with GPU acceleration and automatic differentiation capabilities. NumPy is widely used for scientific and numerical computing tasks, and its FFT functions are integral to many applications. However, JAX offers improved performance and GPU support, making it increasingly attractive for machine learning and scientific computing. By providing a JAX-compatible FFT function that mirrors NumPy’s API, this contribution enhances the accessibility and adoption of JAX among developers who are already familiar with NumPy, thereby expanding the user base and potential contributors to the open-source project.</p>
+
+<p>Furthermore, this contribution aligns with the open-source philosophy of collaboration and community-driven development. It ensures that users can seamlessly transition from NumPy to JAX while preserving their existing codebase, reducing the friction associated with adopting new libraries. This improved interoperability not only benefits current users but also encourages the broader open-source community to explore the capabilities of JAX for their numerical computing needs. In doing so, this contribution strengthens the project’s ecosystem and fosters a more inclusive and vibrant community around JAX, ultimately enhancing its standing as a valuable tool in the open-source software landscape.</p>
+
+<p>Overall, this code defines a JAX-compatible version of the FFT function that wraps JAX’s internal FFT core computation function while maintaining a similar signature to NumPy’s np.fft.fft function for ease of use and compatibility. It is part of a larger codebase that seems to include additional functions and modules related to FFT and linear algebra operations.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># flake8: noqa
+</span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">from</span> <span class="nn">etils.array_types</span> <span class="kn">import</span> <span class="n">ArrayLike</span><span class="p">,</span> <span class="n">Array</span>
+<span class="kn">from</span> <span class="nn">jax._src.numpy.fft</span> <span class="kn">import</span> <span class="n">_fft_core_1d</span>
+<span class="kn">from</span> <span class="nn">jax._src.numpy.util</span> <span class="kn">import</span> <span class="n">_wraps</span>
+<span class="kn">from</span> <span class="nn">jaxlib</span> <span class="kn">import</span> <span class="n">xla_client</span>
+
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">fft</span>
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">linalg</span>
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">name_space_functions</span>
+<span class="kn">from</span> <span class="nn">.name_space_functions</span> <span class="kn">import</span> <span class="o">*</span>
+
+
+<span class="o">@</span><span class="n">_wraps</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">fft</span><span class="p">.</span><span class="n">fft</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">fft</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="n">ArrayLike</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
+        <span class="n">axis</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">norm</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="bp">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Array</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">_fft_core_1d</span><span class="p">(</span><span class="s">'fft'</span><span class="p">,</span> <span class="n">xla_client</span><span class="p">.</span><span class="n">FftType</span><span class="p">.</span><span class="n">FFT</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="n">axis</span><span class="p">,</span>
+                        <span class="n">norm</span><span class="o">=</span><span class="n">norm</span><span class="p">)</span>
+
+<span class="c1"># in /ivy/functional/frontends/jax/numpy/fft.py
+</span>
+<span class="kn">import</span> <span class="nn">jax</span>
+<span class="kn">from</span> <span class="nn">tensorflow.python.framework.test_ops</span> <span class="kn">import</span> <span class="n">a</span>
+
+<span class="n">jax</span><span class="p">.</span><span class="n">numpy</span><span class="p">.</span><span class="n">fft</span><span class="p">.</span><span class="n">fft</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">norm</span><span class="o">=</span><span class="bp">None</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>You can learn more about Ivy and UnifyAI at <a href="[url](https://unify.ai/)https://unify.ai/">https://unify.ai/</a>.</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
