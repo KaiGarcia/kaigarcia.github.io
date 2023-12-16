@@ -22,11 +22,11 @@
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "PHP", "Python", "HTML/CSS", "Javascript", "SQL"]
+      "keywords": [ "PHP", "ReactJS","Python", "HTML/CSS", "Javascript", "SQL"]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "Linux", "Apache", "Git/GitHub", "MySQL", "cPanel" ]
+      "keywords": [ "Git", "Linux", "Apache", "Git/GitHub", "MySQL", "cPanel" ]
     }
   ],
   "education": [
@@ -36,7 +36,7 @@
       "studyType": "B.S.",
       "startDate": "Aug. 2021",
       "endDate": "Present",
-      "courses": ["Java", "C/C++", "SQL", "Software Engineering(Javascript)", "Algorithms/Data Structures"
+      "courses": ["Java", "C/C++", "SQL", "Software Engineering", "Algorithms/Data Structures"
       ]
     }
   ],
@@ -49,12 +49,12 @@
       "endDate": "Present",
       "summary": "Lead Developer",
       "highlights": [
-        "Refactored obsolete and undocumented LAMP (Linux, Apache, MySQL, PHP) projects to modernize payment tracking features; assisting in generating over $100,000 in revenue.",
-        "Overhauled engineering team workflow; implemented local test environment for existing products, improved version control (team was using single main branch), transitioned from document to Kanban-style task tracking.",
-        "Worked closely with nontechnical management to solidify unclear feature requests; proposed designs, turned requests into actionable tasks, negotiated due dates, and effectively delivered on time.",
-        "Conducted interviews and training for incoming developers, assessed technical skills and cultural fit, and introduced backlog grooming and pair programming practices to build and lead a strong and capable software engineering team."
+        "Upgraded and optimized legacy LAMP stack projects, implementing advanced features in payment tracking and overseeing systems handling $100K+ revenue, resulting in enhanced performance and scalability.",
+        "Streamlined engineering workflow, introduced local testing and Kanban task tracking, and optimized version control, achieving a 3x faster production cycle and error reduction.",
+        "Collaborated with non-tech management to clarify and implement feature requests, ensuring timely delivery and stakeholder satisfaction.",
+        "Recruited and mentored two developers, fostering a collaborative team environment through backlog grooming and pair programming practices."
       ]
-    },
+    }
   ],
   "volunteer": [
     {
@@ -79,8 +79,7 @@
       "highlights": [
         "10-week course in foundational AI concepts, machine learning, and ethics.",
         "Collaborated to develop and train machine learning models using Python.",
-        "Explored real-world applications of AI, such as computer vision, natural language
-processing, and robotics."
+        "Explored real-world applications of AI, such as computer vision, natural language processing, and robotics."
       ]
     }
   ],

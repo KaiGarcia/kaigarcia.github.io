@@ -3,6 +3,7 @@ layout: essay
 type: essay
 title: "AI in Education"
 date: 2023-11-20
+published: false
 labels:
 - Artificial Intelligence
 - Education

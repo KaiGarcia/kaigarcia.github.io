@@ -4,7 +4,7 @@ type: essay
 title: "Is Bootstrap 5 Worth It?"
 # All dates must be YYYY-MM-DD format!
 date: 2023-10-05
-published: true
+published: false
 labels:
   - User Interface
   - Bootstrap 5
