@@ -2,31 +2,30 @@
   "basics": {
     "name": "Kai Garcia",
     "label": "Software Engineer | Student",
-    "picture": "img/IMG_5159 copy.jpg",
+    "picture": "img/kai_headshot.jpg",
     "email": "contact@kaigarcia.dev",
-    "website": "https://kaigarcia.github.io/",
-    "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
-    "summary": "I am studying Computer Science at the University of Hawaii at Manoa. At work I create and manage software for a publishing company, mainly using the LAMP development stack.",
+    "website": "https://kaigarcia.dev/",
+    "location": { "address": "", "postalCode": "", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "summary": "Kai Garcia is a senior Computer Science student at the University of Hawaiʻi at Mānoa, set to graduate in May 2025. He interned with the U.S. Space Force, developing an automated rocket launch detection system using commercial satellite imagery. Currently, he works as a Data Engineer at Bayze, creating telemetry pipelines for analytics and machine learning. Kai is now conducting research at the CIRP Lab, focusing on polarization camera systems for advanced terrain monitoring. Kai received multiple awards at the Honolulu Tech Week 2024 hackathon for developing a real-time moped theft detection system.",
     "profiles": [
       { "network": "github", "username": "kaigarcia", "url": "http://github.com/kaigarcia" },
-      { "network": "linkedin", "url": "http://linkedin.com/in/kai-garcia" }
+      { "network": "linkedin", username: "Kai Garcia", "url": "http://linkedin.com/in/kai-garcia" }
     ]
   },
   "interests": [
-    { "name": "Software Engineering" },
     { "name": "Computer Vision" },
-    { "name": "Self-Driving" },
+    { "name": "Space Domain Awareness" },
     { "name": "Entrepreneurship" },
     { "name": "Martial Arts" }
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "PHP", "ReactJS","Python", "HTML/CSS", "Javascript", "SQL"]
+      "keywords": [ "Python", "C", "C++", "Javascript", "Java", "SQL", "PHP", "Assembly" ]
     },
     {
-      "name": "Toolsets/OS",
-      "keywords": [ "Git", "Linux", "Apache", "Git/GitHub", "MySQL", "cPanel" ]
+      "name": "Tools and Technologies",
+      "keywords": [ "AWS", "Docker", "Google Cloud", "Linux", "Git", "OpenCV", "Numpy", "MongoDB", "React.js", "Bootstrap", "Ghidra", "GNU Debugger", "Node.js"]
     }
   ],
   "education": [
@@ -34,58 +33,115 @@
       "institution": "University of Hawaii, Honolulu, HI",
       "area": "Computer Science",
       "studyType": "B.S.",
-      "startDate": "Aug. 2021",
-      "endDate": "Present",
-      "courses": ["Java", "C/C++", "SQL", "Software Engineering", "Algorithms/Data Structures"
+      "startDate": "8/24",
+      "endDate": "5/25",
+      "courses": ["Computer Vision", "Robotics and Cyberphysical Systems", "Software Reverse Engineering", "Operating Systems", "Database Systems", "Data Structures and Algorithms", "Data Networks"
       ]
     }
   ],
   "work": [
     {
+      "company": "SDA TAP Lab - U.S. Space Force",
+      "position": "Computer Vision Intern",
+      "website": "https://sdataplab.org/",
+      "startDate": "8/24",
+      "endDate": "8/24",
+      "highlights": [
+        "Developed an automated rocket launch detection system using pattern recognition algorithms with Python libraries
+NumPy and OpenCV, analyzing GOES satellite IR imagery for near real-time identification and alerting of launch
+events."
+      ]
+    },
+    {
+      "company": "Bayze",
+      "position": "Data Engineer",
+      "website": "https://bayze.com/",
+      "startDate": "9/23",
+      "endDate": "Present",
+      "highlights": [
+        "Designed and implemented a telemetry data pipeline using TypeScript, AWS (CloudWatch, Glue, Lambda Python
+scripts, QuickSight), and Power BI, enhancing data visualization and analysis for health and retention monitoring.",
+        "Optimized data processing and AWS resource usage, reducing costs by over 90%."
+      ]
+    },
+    {
       "company": "ISEC Society",
       "position": "Full Stack Web Developer",
-      "website": "isec-society.org",
-      "startDate": "Dec. 2022",
-      "endDate": "Present",
-      "summary": "Lead Developer",
+      "website": "https://isec-society.org/",
+      "startDate": "12/22",
+      "endDate": "8/24",
       "highlights": [
-        "Upgraded and optimized legacy LAMP stack projects, implementing advanced features in payment tracking and overseeing systems handling $100K+ revenue, resulting in enhanced performance and scalability.",
-        "Streamlined engineering workflow, introduced local testing and Kanban task tracking, and optimized version control, achieving a 3x faster production cycle and error reduction.",
-        "Collaborated with non-tech management to clarify and implement feature requests, ensuring timely delivery and stakeholder satisfaction.",
-        "Recruited and mentored two developers, fostering a collaborative team environment through backlog grooming and pair programming practices."
+        "Spearheaded LAMP (PHP & Typescript) project revamp, introduced advanced payment tracking for $100K+
+transactions, and developed REST API, boosting financial oversight and eﬃciency.",
+        "Enhanced engineering eﬃciency and reduced errors by integrating local testing, adopting Kanban, and refining
+version control, shortening production cycles.",
+        "Recruited and trained 3 developers, fostering a collaborative environment through eﬀective backlog grooming and
+pair programming, enhancing team productivity by 300%."
+      ]
+    },
+    {
+      "company": "Mana Technologies",
+      "position": "Freeland Software Engineer",
+      "website": "https://manatechnologies.io/",
+      "startDate": "3/24",
+      "endDate": "6/24",
+      "highlights": [
+        "Developed an authentication system with Firestore and Google Cloud Functions, and built a Next.js and Tailwind
+CSS dashboard interfaced with a Flask app and Google BigQuery for streamlined access to 4 years of asset
+management data."
       ]
     }
+
   ],
   "volunteer": [
     {
-      "organization": "Pacific Asian Center for Entrepreneurship",
-      "website": "https://pace.shidler.hawaii.edu/",
-      "position": "PACE Leader",
-      "startDate": "Aug. 2023",
+      "organization": "Calvin Shindo Student Venture Fund",
+      "website": "https://pace.shidler.hawaii.edu/venture-fund/",
+      "position": "Associate",
+      "startDate": "8/23",
       "endDate": "Present",
-      "summary": "Associate of Makers Program",
+      "summary": "Investing in Student Entrepreneurs",
       "highlights": [
         "Run workshops to teach entrepreneurs how to build prototypes for their ventures.",
         "Manage inventory and budget for supplies and program costs."
       ]
     },
     {
+      "organization": "Computational Imaging and Robotic Perception (CIRP) Lab",
+      "website": "https://hgchen.com/cirp-lab/",
+      "position": "Undergrad Researcher",
+      "startDate": "9/23",
+      "endDate": "Present",
+      "summary": "Vision-based Terrain Monitoring",
+      "highlights": [
+        "Conduct research on polarization camera systems for advanced terrain monitoring.",
+        "Develop software for data collection and analysis."
+      ]
+    },
+    {
+      "organization": "Honolulu Tech Week Hackathon 2024",
+      "website": "https://www.honolulutechweek.com/hackathon",
+      "position": "Winning Team",
+      "startDate": "9/24",
+      "summary": "Hardware category and Audience Choice Awards",
+      "highlights": [
+        "Won Best Hardware Project and Audience Choice Award for developing a Python BLE-based mobile application
+        using Swift for iOS that detects moped thefts in real-time, alerting users via the university network. The system
+        utilized an Arduino Nano ESP32 and an Adafruit IMU for motion detection and communication."
+      ]
+    },
+    {
       "organization": "Discover AI",
       "website": "https://www.discover.ai/",
-      "position": "",
-      "startDate": "Sep. 2022",
-      "endDate": "Nov. 2022",
+      "position": "Cohort Member",
+      "startDate": "9/22",
+      "endDate": "11/22",
       "summary": "Introductory AI Course",
       "highlights": [
         "10-week course in foundational AI concepts, machine learning, and ethics.",
         "Collaborated to develop and train machine learning models using Python.",
         "Explored real-world applications of AI, such as computer vision, natural language processing, and robotics."
       ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Available upon request"
     }
   ]
 }
