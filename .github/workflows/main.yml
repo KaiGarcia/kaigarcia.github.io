@@ -18,9 +18,15 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      # Add this step to update Rubygems
-      - name: Update Rubygems
-        run: gem update --system
+      # Use ruby/setup-ruby to install a specific Ruby version
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'  # Set a newer version of Ruby that includes an updated RubyGems
+
+      # Install dependencies
+      - name: Install dependencies
+        run: bundle install
 
       - uses: limitusus/json-syntax-check@v1
         with:
