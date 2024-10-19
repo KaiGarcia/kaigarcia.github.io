@@ -2,11 +2,11 @@
   "basics": {
     "name": "Kai Garcia",
     "label": "Software Engineer | Student",
-    "picture": "img/kai_headshot.jpg",
+    "picture": "img/old_headshot.jpg",
     "email": "contact@kaigarcia.dev",
     "website": "https://kaigarcia.dev/",
     "location": { "address": "", "postalCode": "", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
-    "summary": "Kai Garcia is a senior Computer Science student at the University of Hawaiʻi at Mānoa, set to graduate in May 2025. He interned with the U.S. Space Force, developing an automated rocket launch detection system using commercial satellite imagery. Currently, he works as a Data Engineer at Bayze, creating telemetry pipelines for analytics and machine learning. Kai is now conducting research at the CIRP Lab, focusing on polarization camera systems for advanced terrain monitoring. Kai received multiple awards at the Honolulu Tech Week 2024 hackathon for developing a real-time moped theft detection system.",
+    "summary": "Kai Garcia is a senior Computer Science student at the University of Hawaiʻi at Mānoa, set to graduate in May 2025. He interned with the SDA Tap Lab, developing an automated rocket launch detection system using commercial satellite imagery. Kai also worked as a Data Engineer at Bayze, creating telemetry pipelines for analytics and machine learning. He is now conducting research at the Computational Imaging and Robotic Perception (CIRP) Lab, focusing on polarization camera systems for advanced terrain monitoring. Kai received multiple awards at the Honolulu Tech Week 2024 hackathon for developing a real-time moped theft detection system.",
     "profiles": [
       { "network": "github", "username": "kaigarcia", "url": "http://github.com/kaigarcia" },
       { "network": "linkedin", username: "Kai Garcia", "url": "http://linkedin.com/in/kai-garcia" }
