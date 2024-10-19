@@ -10,16 +10,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
       - uses: actions/cache@v2
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
           restore-keys: |
             ${{ runner.os }}-gems-
+
+      # Add this step to update Rubygems
+      - name: Update Rubygems
+        run: gem update --system
+
       - uses: limitusus/json-syntax-check@v1
         with:
           pattern: "\\bio.json$"
-      - uses: helaili/jekyll-action@2.5.0    # Choose any one of the Jekyll Actions
-        with:                                # Some relative inputs of your action
+
+      - uses: helaili/jekyll-action@2.5.0
+        with:
           token: ${{ secrets.GITHUB_TOKEN }}
           target_branch: 'gh-pages'
