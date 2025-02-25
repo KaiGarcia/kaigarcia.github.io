@@ -1,0 +1,6 @@
+[submodule "wheelsensor-ICS496.github.io"]
+	path = wheelsensor-ICS496.github.io
+	url = https://github.com/KaiGarcia/wheelsensor-ICS496.github.io
+[submodule "projects/wheelsensor-ICS496"]
+	path = projects/wheelsensor-ICS496
+	url = https://github.com/KaiGarcia/wheelsensor-ICS496.git
