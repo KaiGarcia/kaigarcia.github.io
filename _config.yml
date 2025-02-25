@@ -28,5 +28,6 @@ exclude:
 include:
   - .nojekyll
   - _data
+  - projects/wheelsensor-ICS496
 plugins:
   - jekyll-gist
