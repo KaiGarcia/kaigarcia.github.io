@@ -5,8 +5,8 @@
       <img src="{{ site.baseurl }}/{{ include.page.image }}" class="img-fluid rounded-start" alt="{{ include.page.title }}">
     </div>
     <!-- Text Column -->
-    <div class="col-md-8">
-      <div class="card-body">
+    <div class="col-md-8 d-flex flex-column">
+      <div class="card-body d-flex flex-column">
         <h5 class="card-title">{{ include.page.title }} <small class="text-muted float-end">{{ include.page.date }}</small></h5>
         <p class="card-text">{{ include.page.summary }}</p>
         <p>
@@ -14,11 +14,13 @@
             <span class="badge bg-secondary">{{ label }}</span>
           {% endfor %}
         </p>
-        {% if page.projecturl %}
-          <a href="{{ page.projecturl }}" class="btn btn-outline-dark">Project Site</a>
-        {% else %}
-          <a href="{{ site.baseurl }}{{ include.page.url }}" class="btn btn-outline-dark">Read More</a>
-        {% endif %}
+        <div class="mt-auto">
+          {% if page.projecturl %}
+            <a href="{{ page.projecturl }}" class="btn btn-outline-dark">Project Site</a>
+          {% else %}
+            <a href="{{ site.baseurl }}{{ include.page.url }}" class="btn btn-outline-dark">Read More</a>
+          {% endif %}
+        </div>
       </div>
     </div>
   </div>
