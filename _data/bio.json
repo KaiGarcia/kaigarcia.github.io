@@ -1,0 +1,147 @@
+{
+  "basics": {
+    "name": "Kai Garcia",
+    "label": "Software Engineer | Student",
+    "picture": "img/old_headshot.jpg",
+    "email": "contact@kaigarcia.dev",
+    "website": "https://kaigarcia.dev/",
+    "location": { "address": "", "postalCode": "", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "summary": "Kai Garcia is a senior Computer Science student at the University of Hawaiʻi at Mānoa, set to graduate in May 2025. He interned with the SDA Tap Lab, developing an automated rocket launch detection system using commercial satellite imagery. Kai also worked as a Data Engineer at Bayze, creating telemetry pipelines for analytics and machine learning. He is now conducting research at the Computational Imaging and Robotic Perception (CIRP) Lab, focusing on polarization camera systems for advanced terrain monitoring. Kai received multiple awards at the Honolulu Tech Week 2024 hackathon for developing a real-time moped theft detection system.",
+    "profiles": [
+      { "network": "github", "username": "kaigarcia", "url": "http://github.com/kaigarcia" },
+      { "network": "linkedin", username: "Kai Garcia", "url": "http://linkedin.com/in/kai-garcia" }
+    ]
+  },
+  "interests": [
+    { "name": "Computer Vision" },
+    { "name": "Space Domain Awareness" },
+    { "name": "Entrepreneurship" },
+    { "name": "Martial Arts" }
+  ],
+  "skills": [
+    {
+      "name": "Languages and Frameworks",
+      "keywords": [ "Python", "C", "C++", "Javascript", "Java", "SQL", "PHP", "Assembly" ]
+    },
+    {
+      "name": "Tools and Technologies",
+      "keywords": [ "AWS", "Docker", "Google Cloud", "Linux", "Git", "OpenCV", "Numpy", "MongoDB", "React.js", "Bootstrap", "Ghidra", "GNU Debugger", "Node.js"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Hawaii, Honolulu, HI",
+      "area": "Computer Science",
+      "studyType": "B.S.",
+      "startDate": "8/24",
+      "endDate": "5/25",
+      "courses": ["Computer Vision", "Robotics and Cyberphysical Systems", "Software Reverse Engineering", "Operating Systems", "Database Systems", "Data Structures and Algorithms", "Data Networks"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "SDA TAP Lab - U.S. Space Force",
+      "position": "Computer Vision Intern",
+      "website": "https://sdataplab.org/",
+      "startDate": "8/24",
+      "endDate": "8/24",
+      "highlights": [
+        "Developed an automated rocket launch detection system using pattern recognition algorithms with Python libraries
+NumPy and OpenCV, analyzing GOES satellite IR imagery for near real-time identification and alerting of launch
+events."
+      ]
+    },
+    {
+      "company": "Bayze",
+      "position": "Data Engineer",
+      "website": "https://bayze.com/",
+      "startDate": "9/23",
+      "endDate": "Present",
+      "highlights": [
+        "Designed and implemented a telemetry data pipeline using TypeScript, AWS (CloudWatch, Glue, Lambda Python
+scripts, QuickSight), and Power BI, enhancing data visualization and analysis for health and retention monitoring.",
+        "Optimized data processing and AWS resource usage, reducing costs by over 90%."
+      ]
+    },
+    {
+      "company": "ISEC Society",
+      "position": "Full Stack Web Developer",
+      "website": "https://isec-society.org/",
+      "startDate": "12/22",
+      "endDate": "8/24",
+      "highlights": [
+        "Spearheaded LAMP (PHP & Typescript) project revamp, introduced advanced payment tracking for $100K+
+transactions, and developed REST API, boosting financial oversight and eﬃciency.",
+        "Enhanced engineering eﬃciency and reduced errors by integrating local testing, adopting Kanban, and refining
+version control, shortening production cycles.",
+        "Recruited and trained 3 developers, fostering a collaborative environment through eﬀective backlog grooming and
+pair programming, enhancing team productivity by 300%."
+      ]
+    },
+    {
+      "company": "Mana Technologies",
+      "position": "Freeland Software Engineer",
+      "website": "https://manatechnologies.io/",
+      "startDate": "3/24",
+      "endDate": "6/24",
+      "highlights": [
+        "Developed an authentication system with Firestore and Google Cloud Functions, and built a Next.js and Tailwind
+CSS dashboard interfaced with a Flask app and Google BigQuery for streamlined access to 4 years of asset
+management data."
+      ]
+    }
+
+  ],
+  "volunteer": [
+    {
+      "organization": "Calvin Shindo Student Venture Fund",
+      "website": "https://pace.shidler.hawaii.edu/venture-fund/",
+      "position": "Associate",
+      "startDate": "8/23",
+      "endDate": "Present",
+      "summary": "Investing in Student Entrepreneurs",
+      "highlights": [
+        "Run workshops to teach entrepreneurs how to build prototypes for their ventures.",
+        "Manage inventory and budget for supplies and program costs."
+      ]
+    },
+    {
+      "organization": "Computational Imaging and Robotic Perception (CIRP) Lab",
+      "website": "https://hgchen.com/cirp-lab/",
+      "position": "Undergrad Researcher",
+      "startDate": "9/23",
+      "endDate": "Present",
+      "summary": "Vision-based Terrain Monitoring",
+      "highlights": [
+        "Conduct research on polarization camera systems for advanced terrain monitoring.",
+        "Develop software for data collection and analysis."
+      ]
+    },
+    {
+      "organization": "Honolulu Tech Week Hackathon 2024",
+      "website": "https://www.honolulutechweek.com/hackathon",
+      "position": "Winning Team",
+      "startDate": "9/24",
+      "summary": "Hardware category and Audience Choice Awards",
+      "highlights": [
+        "Won Best Hardware Project and Audience Choice Award for developing a Python BLE-based mobile application
+        using Swift for iOS that detects moped thefts in real-time, alerting users via the university network. The system
+        utilized an Arduino Nano ESP32 and an Adafruit IMU for motion detection and communication."
+      ]
+    },
+    {
+      "organization": "Discover AI",
+      "website": "https://www.discover.ai/",
+      "position": "Cohort Member",
+      "startDate": "9/22",
+      "endDate": "11/22",
+      "summary": "Introductory AI Course",
+      "highlights": [
+        "10-week course in foundational AI concepts, machine learning, and ethics.",
+        "Collaborated to develop and train machine learning models using Python.",
+        "Explored real-world applications of AI, such as computer vision, natural language processing, and robotics."
+      ]
+    }
+  ]
+}
