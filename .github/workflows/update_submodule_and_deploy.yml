@@ -1,0 +1,33 @@
+name: Update Submodules and Deploy
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs daily at midnight
+  workflow_dispatch:
+
+jobs:
+  update-submodules:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          submodules: recursive
+
+      - name: Update Submodules
+        run: |
+          git submodule update --remote --merge
+          git add .
+          git commit -m "Update submodules to latest commits"
+          git push
+
+      - name: Deploy Site
+        run: |
+          # Add your deployment commands here
+          # For example, if using GitHub Pages:
+          # - Install Jekyll
+          # - Build the site
+          # - Push the generated files to the gh-pages branch
+
+
